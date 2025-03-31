@@ -147,7 +147,7 @@ h3 {
   color: #5d6d7e;
   /* position: relative; */
   transition: background 0.3s ease-in-out;
-  background: #CED7DC ;
+  background: #e4ebef ;
   border: none;
   padding: 8px 24px;
   cursor: pointer;
@@ -158,7 +158,7 @@ h3 {
 }
 
 /* Criando o efeito de seta */
-.breadcrumb-item::after {
+/* .breadcrumb-item::after {
   content: "";
   position: absolute;
   right: -10px;
@@ -167,7 +167,7 @@ h3 {
   border-left: 10px solid #f1f6fa;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-}
+} */
 
 /* Remover a seta do último item */
 .breadcrumb-item:last-child {
