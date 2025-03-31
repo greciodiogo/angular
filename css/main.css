@@ -1,0 +1,178 @@
+:root {
+  --border: 1px solid #CED7DC;
+  --text-color: #56656D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E7EFF4;
+}
+
+.perfil-container {
+  /* background-color: #efefef; */
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  border: var(--border);
+}
+
+.perfil-header {
+  padding: 2rem 1rem;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: var(--border);
+}
+
+.perfil-header h2 {
+  padding-bottom: 10px;
+  color: var(--text-color);
+}
+
+.perfil-header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.perfil-content {
+  border: var(--border);
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1rem;
+}
+.perfil-sidebar {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: var(--border);
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  background: #CED7DC ;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+.username {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--text-color);
+}
+.perfil-details {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.perfil-details-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.perfil-details-group{
+
+}
+
+.detalhes,
+.relatorios,
+.login-atividade,
+.aplicativo-movel,
+.miscelanea {
+  margin-bottom: 1rem;
+  border: var(--border);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.perfil-details  {
+  border-bottom: 2px solid #CED7DC  ;
+  padding-bottom: 5px;
+  margin-bottom: 1rem;
+}
+.email {
+  color: #D23032;
+}
+.qr-code {
+  width: 100px;
+  height: 100px;
+  background: #CED7DC ;
+  margin: 10px 0;
+}
+
+a {
+  color: #D23032;
+  text-decoration: none;
+}
+
+h3 {
+  color: var(--text-color);
+}
+
+.change-profile:hover{
+  opacity: .85;
+}
+
+.change-profile{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: #D23032;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.breadcrumb-item {
+  color: #5d6d7e;
+  /* position: relative; */
+  transition: background 0.3s ease-in-out;
+  background: #CED7DC ;
+  border: none;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.breadcrumb-item:hover {
+  background: #e0ebf5;
+}
+
+/* Criando o efeito de seta */
+.breadcrumb-item::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 10px solid #f1f6fa;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+/* Remover a seta do último item */
+.breadcrumb-item:last-child {
+}
+
+.breadcrumb-item:last-child::after {
+  display: none;
+}
